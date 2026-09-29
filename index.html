@@ -1,0 +1,33 @@
+  roadOffset +=
+    delta *
+    gameSpeed *
+    0.25;
+
+  if(roadOffset > 80){
+
+    roadOffset -= 80;
+
+  }
+
+
+  /* TIMERS */
+
+  enemyTimer += delta;
+
+  coinTimer += delta;
+
+
+  /* ENEMY SPAWN */
+
+  const enemyDelay =
+    Math.max(
+      220,
+      780 - level * 42
+    );
+
+
+  if(enemyTimer > enemyDelay){
+
+    createEnemy();
+
+    enemyTimer = 0;
