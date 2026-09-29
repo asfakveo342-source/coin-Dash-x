@@ -1,4 +1,4 @@
-यहाँ Android CI का YAML कोड है ताकि आप APK बिल्ड कर सकें:
+
 name: Android CI
 on:
 push:
